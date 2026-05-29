@@ -62,5 +62,5 @@ export const notifications: Notification[] = [
         typePost: 'Chess Club',
         time: '2 week ago',
         isRead: true,
-    }
+    },
 ]

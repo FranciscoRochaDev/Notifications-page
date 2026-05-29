@@ -1,6 +1,10 @@
 
+type HeaderProps = {
+    isRead: number;
+    markAllAsRead: () => void;
+}
 
-export default function Header() {
+export default function Header({ isRead, markAllAsRead } : HeaderProps) {
 
     return (
         <header className="flex mx-auto max-w-2xl w-full px-4">
@@ -10,12 +14,15 @@ export default function Header() {
                 </h1>
                 <h2 className="bg-blue-950 text-white rounded-sm w-8 h-6 text-left
                     font-primary font-bold text-sm flex items-center justify-center">
-                    0
+                    {isRead}
                 </h2>
             </div>
-            <a className="ml-auto font-primary text-gray-600 font-medium text-sm text-left cursor-pointer">
+            <button
+                onClick={markAllAsRead}
+                className="ml-auto font-primary text-gray-600 font-medium text-sm text-left cursor-pointer"
+            >
                 Mark all as read
-            </a>
+            </button>
         </header>
     )
 
