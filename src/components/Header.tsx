@@ -10,7 +10,7 @@ export default function Header() {
                 </h1>
                 <h2 className="bg-blue-950 text-white rounded-sm w-8 h-6 text-left
                     font-primary font-bold text-sm flex items-center justify-center">
-                    3
+                    0
                 </h2>
             </div>
             <a className="ml-auto font-primary text-gray-600 font-medium text-sm text-left cursor-pointer">
